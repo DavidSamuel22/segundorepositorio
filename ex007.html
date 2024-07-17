@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de CSS Grid</title>
+  <style>
+    .grid-container {
+      display: grid; /* Define o elemento como um grid container */
+      grid-template-columns: 1fr 1fr 1fr; /* Define três colunas de largura igual */
+      grid-gap: 10px; /* Define um espaço de 10px entre os itens */
+    }
+    .grid-item {
+      background-color: #4CAF50; /* Cor de fundo verde */
+      color: white; /* Cor do texto branca */
+      border: 1px solid #ddd; /* Borda cinza */
+      padding: 20px; /* Espaçamento interno de 20px */
+      text-align: center; /* Centraliza o texto */
+      font-size: 30px; /* Tamanho da fonte */
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+  </div>
+</body>
+</html>
+
