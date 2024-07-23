@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo de Alteração de Texto com JavaScript</title>
+<style>
+    /* Estiliza o corpo da página */
+    body {
+        font-family: Arial, sans-serif; /* Define a fonte para Arial ou similar */
+        padding: 20px; /* Adiciona um espaço interno de 20px ao redor do conteúdo */
+    }
+</style>
+</head>
+<body>
+
+<!-- Botão para alterar o texto -->
+<button id="alterarTextoBtn">Alterar Texto</button>
+<!-- Parágrafo com texto inicial -->
+<p id="textoElemento">Texto original</p>
+
+<script>
+// Seleciona o botão e o elemento de texto usando seus IDs
+const botaoAlterar = document.getElementById('alterarTextoBtn'); // Seleciona o botão pelo ID
+const elementoTexto = document.getElementById('textoElemento'); // Seleciona o parágrafo pelo ID
+
+// Armazena o texto original do parágrafo
+const textoOriginal = elementoTexto.textContent; // Armazena o texto inicial do parágrafo
+
+// Adiciona um event listener para o botão
+botaoAlterar.addEventListener('click', () => {
+    // Verifica o texto atual do elemento
+    if (elementoTexto.textContent === textoOriginal) {
+        // Se o texto atual for igual ao texto original, altera para um novo texto
+        elementoTexto.textContent = 'Novo texto modificado';
+    } else {
+        // Se não, volta ao texto original
+        elementoTexto.textContent = textoOriginal;
+    }
+});
+</script>
+
+</body>
+</html>
